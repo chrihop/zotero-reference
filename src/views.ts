@@ -695,7 +695,7 @@ class AddonViews extends AddonModule {
                     window.setTimeout(() => {                      
                       if (editTimer || rows.querySelector("#reference-edit")) { return }
                       this.showProgressWindow(idText, reference.text, "default", 2500, -1)
-                      this.Addon.utils.copyText((idText ? idText + "\n" : "") + refText, false)
+                      this.Addon.utils.copyText(refText, false)
                     }, 10);
                   }
                 }
